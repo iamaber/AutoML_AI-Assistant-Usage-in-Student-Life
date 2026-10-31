@@ -10,6 +10,8 @@ dependencies = [
     "pandas==2.1.4",
     "pycaret==3.3.2",
     "scikit-learn==1.4.2",
+    # scikit-plot 0.3.7 (a pycaret dependency) imports six without declaring it
+    "six>=1.16",
 ]
 
 [dependency-groups]
