@@ -8,3 +8,6 @@ venv/
 .pytest_cache/
 *.egg-info/
 logs.log
+
+# generated notebook export (render with `uv run jupyter nbconvert --to html`)
+autoML_cleaned.html

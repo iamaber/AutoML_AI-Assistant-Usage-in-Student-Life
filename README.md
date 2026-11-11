@@ -15,7 +15,7 @@ and a 0.7065 majority-class accuracy baseline. Treat the signal as weak.
 
 - `autoML.ipynb`: Jupyter notebook for data analysis, model training, and exporting the best pipeline.
 - `autoML_cleaned.ipynb`: the notebook exported for the rendered HF Space report; has the same cells as `autoML.ipynb`.
-- `autoML_cleaned.html`: static HTML export of `autoML_cleaned.ipynb`, tracked because it is the published report.
+- `autoML_cleaned.html`: static HTML export of `autoML_cleaned.ipynb`, published as the HF Space report. Not tracked in git — regenerate with `uv run jupyter nbconvert --to html autoML_cleaned.ipynb`.
 - `main.py`: Script to load the trained model and make predictions on new data.
 - `my_best_pipeline.pkl`: Saved PyCaret pipeline/model (joblib format).
 - `METRICS.md`: measured CV and holdout metrics plus the baseline comparison.
