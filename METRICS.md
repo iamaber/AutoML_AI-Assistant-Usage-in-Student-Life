@@ -8,9 +8,15 @@ Settings: `session_id=42`, `train_size=0.8`, 5-fold stratified CV on the
 training split, `fix_imbalance=True`, `normalize=True`,
 `pca=True, pca_components=0.90`.
 
-Selected model: `QuadraticDiscriminantAnalysis(reg_param=0.0)`.
-`tune_model` ran but found no improvement, so the shipped pipeline keeps
-`reg_param=0.0`.
+Selected model type: `QuadraticDiscriminantAnalysis`.
+
+Note on the shipped artifact: `my_best_pipeline.pkl` was trained in Colab
+before the seed was fixed and stores `reg_param=0.29`. The numbers below
+come from a clean, seeded re-run of the current notebook, which selects
+`reg_param=0.0` (`tune_model(..., choose_better=True)` kept the untuned
+model). The two differ only in that one hyper-parameter, so treat the
+artifact as "same model family, not bit-for-bit reproducible" until it is
+regenerated.
 
 | Measurement | Accuracy | AUC | F1 | PR-AUC |
 |---|---|---|---|---|
