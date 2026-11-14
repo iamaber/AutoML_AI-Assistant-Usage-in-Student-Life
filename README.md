@@ -2,6 +2,8 @@
 
 This project uses AutoML (PyCaret) to analyze and predict student behavior regarding AI assistant usage in their academic life. The workflow includes data preprocessing, model selection, tuning, evaluation, and deployment for prediction.
 
+**Rendered report:** [huggingface.co/spaces/iamaber/AI-Assistant-Usage-Student-AutoML](https://huggingface.co/spaces/iamaber/AI-Assistant-Usage-Student-AutoML) — a static HTML export of `autoML_cleaned.ipynb`, with no server or live prediction.
+
 ## Project Structure
 
 - `autoML.ipynb`: Jupyter notebook for data analysis, model training, and exporting the best pipeline.
